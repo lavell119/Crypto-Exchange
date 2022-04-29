@@ -1,7 +1,11 @@
 
-* {
+*,
+::before,
+::after
+ {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,7 +17,7 @@ body {
 
 .logo-container {
     height: 110px;
-    background: green;
+    background: lightgrey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,8 +26,8 @@ body {
 .logo-img {
     height: 80px;
     width: 150px;
-    background: black;
     color: white;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,9 +36,84 @@ body {
 .selector {
     height: 550px;
     width: 100vw;
-    background: yellow;
+    background: lightgrey;
 }
 
 .pay-with-selector {
+    display: none;
+}
+
+.buy-selector-title {
+    text-align: center;
+    height: 50px;
+    width: 100vw;
+    background: rgb(48, 48, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+
+.buy-options {
+    height: 160px;
+    width: 330px;
+    margin: auto;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    margin-bottom: 50px;
+
+}
+
+.option {
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px lightgrey solid;
+    cursor: pointer;
+
+}
+
+.option:hover {
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+.option:active {
+    border: 1px grey solid;
+}
+
+.option h4 {
+    position: relative;
+    top: 20px;
+}
+
+.next-button {
+    background: rgb(48, 48, 241);
+    width: 200px;
+    height: 45px;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+.next-button:hover {
+    background: rgb(105, 105, 223);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.buy-selector.hidden {
     display: none;
 }

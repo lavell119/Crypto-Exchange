@@ -170,3 +170,23 @@ body {
     border-radius: 3px;
     cursor: pointer;
 }
+
+.dollar-amount {
+    
+}
+
+.payment-message {
+    flex-direction: column;
+    text-align: center;
+    display: none;
+}
+
+.payment-message.show {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.confirmation.hide {
+    display: none;
+}

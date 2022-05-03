@@ -8,6 +8,8 @@ const priceOptions=document.querySelector('.price-options')
 const confirmation=document.querySelector('.confirmation')
 const dollarAmount=document.querySelector('.dollar-amount')
 const subTitle=document.querySelector('.sub-title')
+const confirmationButton=document.querySelectorAll('.confirmation-button')
+
 
 
 btcOption.addEventListener('click', ()=> {
@@ -23,8 +25,14 @@ priceOption.forEach(option=>option.addEventListener('click', ()=> {priceOptions.
     let innerText=option.innerText
     dollarAmount.innerText=innerText
     subTitle.innerText='CONFIRMATION'
-
 }))
+
+confirmationButton.forEach(button=>button.addEventListener('click', ()=>{
+confirmation.classList.remove('show')
+}))
+
+
+
 
 
 

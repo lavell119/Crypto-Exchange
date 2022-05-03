@@ -43,7 +43,12 @@ body {
     display: none;
 }
 
-.buy-selector-title {
+.price-option {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sub-title {
     text-align: center;
     height: 50px;
     width: 100vw;
@@ -57,7 +62,7 @@ body {
 
 }
 
-.buy-options {
+.main-grid {
     height: 160px;
     width: 330px;
     margin: auto;
@@ -85,7 +90,7 @@ body {
 }
 
 .option:active {
-    border: 1px grey solid;
+    border: 2px grey solid;
 }
 
 .option h4 {
@@ -114,6 +119,13 @@ body {
     display: none;
 }
 
-.buy-selector.hidden {
+#buy-selector.hidden {
     display: none;
+}
+
+#buy-selector {
+}
+
+.price-options {
+    font-size: 67px;
 }

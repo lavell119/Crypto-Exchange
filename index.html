@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Crypto Exchange</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head>
 <body>
     <div class="logo-container">
@@ -13,22 +13,61 @@
             <img src="images/pirates.png">
         </div>
     </div>
-    <div class="buy-selector selector">
-        <div class="buy-selector-title">
-            WHAT WOULD YOU LIKE TO BUY?
-        </div>
-        <div class="buy-options">
-            <div class="option">
-                <img src="images/btc.png">
-                <h4>Bitcoin</h4>
+    <div class="sub-title">
+        WHAT WOULD YOU LIKE TO BUY?
+    </div>
+    <div class="selectors">
+        <div class="buy-selector selector" id="buy-selector">
+            
+            <div class="buy-options main-grid">
+                <div class="btc-option option">
+                    <img src="images/btc.png">
+                    <h4>Bitcoin</h4>
+                </div>
+                <div class="eth-option option">
+                    <img src="images/eth.png">
+                    <h4>Ethereum</h4>
+                </div>
             </div>
-            <div class="option">
-                <img src="images/eth.png">
-                <h4>Ethereum</h4>
+        </div>
+            
+            <div class="price-options main-grid">
+                <div class="price-option option">
+                $10
+                </div>
+                <div class="price-option option">
+                $25
+                </div>
+                <div class="price-option option">
+                $50
+                </div>
+                <div class="price-option option">
+                $100
+                </div>
+                <div class="price-option option">
+                $200
+                </div>
+                <div class="price-option option">
+                $500
+                </div>
+            </div>
+            <div class="price-options main-grid">
+                <div class="option">
+                <h4>$20</h4>
+                </div>
+                <div class="option">
+                    <h4>$50</h4>
+                </div>
+                <div class="option">
+                    <h4>$100</h4>
+                </div>
+                <div class="option">
+                    <h4>$200</h4>
+                </div>
             </div>
         </div>
-        <div class="next-button">NEXT</div>
-
+    </div>
+    <div class="bitcoin-buy-amount">
 
     </div>
     <div class="pay-with-selector selector">

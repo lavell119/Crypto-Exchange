@@ -1,4 +1,16 @@
-let nextButton=document.querySelector("next-button")
-let buySelector=document.querySelector("buy-selector")
+const nextButton=document.getElementById('next-button')
+const buySelector=document.getElementById('buy-selector')
+const btcOption=document.querySelector('.btc-option')
+const ethOption=document.querySelector('.eth-option')
+const selector=document.querySelector('.selector')
 
-nextButton.onClick=(buySelector)=>{buySelector.classList.add("hidden")}
+
+
+btcOption.addEventListener('click', ()=> {buySelector.classList.add('hidden')})
+ethOption.addEventListener('click', ()=> {buySelector.classList.add('hidden')})
+
+
+
+
+
+

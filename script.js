@@ -9,6 +9,7 @@ const confirmation=document.querySelector('.confirmation')
 const dollarAmount=document.querySelector('.dollar-amount')
 const subTitle=document.querySelector('.sub-title')
 const confirmationButton=document.querySelectorAll('.confirmation-button')
+const paymentMessage=document.querySelector('.payment-message')
 
 
 
@@ -29,6 +30,8 @@ priceOption.forEach(option=>option.addEventListener('click', ()=> {priceOptions.
 
 confirmationButton.forEach(button=>button.addEventListener('click', ()=>{
 confirmation.classList.remove('show')
+subTitle.innerText='PAYMENT MESSAGE'
+paymentMessage.classList.add('show')
 }))
 
 

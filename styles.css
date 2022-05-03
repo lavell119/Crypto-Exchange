@@ -171,10 +171,6 @@ body {
     cursor: pointer;
 }
 
-.dollar-amount {
-    
-}
-
 .payment-message {
     flex-direction: column;
     text-align: center;
@@ -187,6 +183,3 @@ body {
     text-align: center;
 }
 
-.confirmation.hide {
-    display: none;
-}

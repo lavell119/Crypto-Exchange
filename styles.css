@@ -34,7 +34,7 @@ body {
 }
 
 .selector {
-    height: 550px;
+    height: 300px;
     width: 100vw;
     background: lightgrey;
 }
@@ -46,6 +46,28 @@ body {
 .price-option {
     font-size: 22px;
     font-weight: bold;
+
+    
+}
+
+.confirmation {
+
+    text-align: center;
+    width: 100%;
+    font-size: 19px;
+    display: none;
+
+}
+
+.confirmation.show {
+    display: flex;
+    text-align: center;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 19px;
+   
 }
 
 .sub-title {
@@ -85,7 +107,7 @@ body {
 }
 
 .option:hover {
-    border: 1px white solid;
+    border: 2px white solid;
     border-radius: 5px;
 }
 
@@ -96,6 +118,9 @@ body {
 .option h4 {
     position: relative;
     top: 20px;
+}
+
+.buy-options {
 }
 
 .next-button {
@@ -123,9 +148,25 @@ body {
     display: none;
 }
 
-#buy-selector {
-}
+
+
 
 .price-options {
     font-size: 67px;
+    display: none;
+}
+
+.price-options.show {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+}
+
+
+.confirmation-buttons button {
+    padding: 7px 15px 7px 15px;;
+    border: 1px white solid;
+    border-radius: 3px;
+    cursor: pointer;
 }

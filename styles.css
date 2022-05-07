@@ -46,6 +46,8 @@ body {
 .price-option {
     font-size: 22px;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
 
     
 }
@@ -192,8 +194,3 @@ button {
     font-weight: bold;
 }
 
-.response {
-    height: 100px;
-    width: 80px;
-    background: yellow;
-}

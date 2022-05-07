@@ -12,7 +12,19 @@ const confirmationButton=document.querySelectorAll('.confirmation-button')
 const paymentMessage=document.querySelector('.payment-message')
 const paymentButton=document.querySelector('.payment-message-btn')
 let response=document.querySelector('.response')
-const ticker=document.querySelector('.ticker')
+const ticker=document.querySelectorAll('.ticker')
+
+let priceLive=()=>{
+fetch('https://blockchain.info/tobtc?currency=USD&value=500')
+.then(res=>res.json())
+}
+
+
+
+priceOption.forEach(option=>option.firstElementChild.innerText=priceLive)
+
+
+
 
 btcOption.addEventListener('click', ()=> {
 buySelector.classList.add('hidden')
@@ -20,14 +32,19 @@ priceOptions.classList.add('show')
 subTitle.innerText='HOW MUCH WOULD YOU LIKE TO BUY?'
 })
 
+
+
+
+
+
 ethOption.addEventListener('click', ()=> {buySelector.classList.add('hidden')
 priceOptions.classList.add('show')
 subTitle.innerText='HOW MUCH WOULD YOU LIKE TO BUY?'})
 
 priceOption.forEach(option=>option.addEventListener('click', ()=> {priceOptions.classList.remove('show')
     confirmation.classList.add('show')
-    let innerText=option.innerText
-    dollarAmount.innerText=innerText
+    let inText=option.innerText
+    dollarAmount.innerText=inText
     subTitle.innerText='CONFIRMATION'
 }))
 
@@ -35,7 +52,7 @@ fetch('https://blockchain.info/tobtc?currency=USD&value=500')
 .then(res=>res.json())
 .then(data=>console.log(data))
 
-price-option.forEach(ticker.innerText=priceOption.innerText)
+
 
 
 
@@ -45,10 +62,12 @@ subTitle.innerText='PAYMENT MESSAGE'
 paymentMessage.classList.add('show')
 }))
 
-paymentButton.addEventListener('click', ()=> {
-    switch (purchase) {
+let dataSet=priceOption.dataset.purchase
+
+paymentButton.addEventListener('click', (priceOption, dataset)=> {
+    switch (dataset) {
         case '10BTC':
-          Window.open()
+          Window.open('www.netflix.com')
           break;
         case '25BTC':
           //Statements executed when the

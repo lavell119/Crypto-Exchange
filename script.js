@@ -17,11 +17,20 @@ const ticker=document.querySelectorAll('.ticker')
 let priceLive=()=>{
 fetch('https://blockchain.info/tobtc?currency=USD&value=500')
 .then(res=>res.json())
+let varia= response
+console.log(varia)
+return varia
+
+}
+
+var livePrice={
+  "async": true,
+  scroosDomain: true,
+  "url": "https://api.coingeckp.com/api/v3/simple/price?ids=bitcoin%2Clitecoin%2Cethereum%2Cdogecoin&"
 }
 
 
-
-priceOption.forEach(option=>option.firstElementChild.innerText=priceLive)
+priceOption.forEach(option=>option.firstElementChild.innerText=varia)
 
 
 
